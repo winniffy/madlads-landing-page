@@ -1,0 +1,373 @@
+*, *::before, *::after { box-sizing: border-box; padding: 0}
+
+:root {
+    --red: #F62038;
+    --soft-red: #FB8F9B;
+}
+
+/* fonts */
+@font-face {
+    font-family: 'clash_display_regular';
+    src: url('font-clash-display-webkit/clashdisplay-regular-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_semi';
+    src: url('font-clash-display-webkit/clashdisplay-semibold-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_light';
+    src: url('font-clash-display-webkit/clashdisplay-light-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_mid';
+    src: url('font-clash-display-webkit/clashdisplay-medium-webfont.woff');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'clash_display_bold';
+    src: url('font-clash-display-webkit/clashdisplay-bold-webfont.woff');
+    font-weight: normal;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    font-family: 'clash_display_mid';
+}
+
+p, h1, h2, div, article, a, li {padding: 0; margin: 0; text-decoration: none; list-style: none;}
+
+.container {
+    padding: 2em 0;
+    margin: 0 auto;
+    width: 80%;
+    max-width: 1440px;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 62px;
+    aspect-ratio: 1;
+}
+
+.get-backpack-btn {
+    border: 1.5px solid var(--red);
+    color: #000;
+    font-size: 1rem;
+    padding: .85em 1em;
+    border-radius: 7px;
+    transition: 200ms;
+}
+
+.get-backpack-btn:hover {
+    color: #fff;
+    background-color: var(--red);
+}
+
+/* hero section  */
+.hero {
+    position: relative;
+    margin: 0;
+}
+
+.hero-header {
+    text-align: center;
+    font-size: 4rem;
+    color: var(--red);
+    font-family: 'clash_display_bold';
+    margin-top: 1.5rem;
+}
+
+.hero-subtext {
+    text-align: center;
+    margin-top: .75rem;
+}
+
+.mint-only-container {
+    background-color: var(--red);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .85rem 1rem;
+    border-radius: 8px;
+    margin: 2rem auto 1rem;
+    gap: 1rem;
+    transition: 200ms;
+}
+
+.mint-only-container:hover {
+    background-color: var(--soft-red);
+}
+
+.mint-only-text{
+    color: #fff;
+}
+
+.backpack-icon {
+    width: 23px;
+}
+
+.hero-img-container {
+    margin: 0 auto;
+    width: fit-content;
+}
+
+.hero-img {
+    max-width: 700px;
+    margin-top: 1rem;
+}
+
+.hero-line {
+    background-color: var(--red);
+    padding: .3rem;
+    position: absolute;
+    width: 100%;
+    bottom: 2rem;
+}
+
+/* who are the madlads section */
+.who-are-container {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.who-are-header {
+    color: var(--red);
+    font-family: 'clash_display_semi';
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.who-are-subtext {
+    max-width: 50%;
+    margin: 0 auto;
+    line-height: 200%;
+}
+
+.xnft-backpack-section {
+    margin-top: 5rem;
+}
+
+.wtf-xnft-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.wtf-xnft-header {
+    color: var(--red);
+    font-family: 'clash_display_semi';
+    font-size: 1.85rem;
+}
+
+.wtf-xnft-subtext {
+    width: 80%;
+    margin: 1.5rem 0;
+    line-height: 200%;
+}
+
+.what-backpack-container {
+    margin-top: 10rem;
+    gap: 8rem;
+}
+
+.what-backpack {
+    width: 100%;
+}
+
+.wtf-xnft-image {
+    max-width: 400px;
+}
+
+.read-more-w {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--soft-red);
+    width: fit-content;
+}
+
+.read-more-w:hover {
+    color: var(--red);
+}
+
+.immadculate-container {
+    margin-top: 2rem;
+}
+
+.immadculate-header {
+    text-align: center;
+}
+
+.immadculate-subtext {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-areas: 'a b c d';
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(250px, auto);
+}
+
+.gallery1 {
+    border-radius: 7px;
+    background-size:cover;
+    max-width: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: baseline;
+    padding: 0 2rem;
+}
+
+.gallery1-info {
+    opacity: 0;
+    font-family: 'clash_display_regular';
+    font-size: 1rem;
+}
+
+.gallery1:hover{
+    box-shadow: inset 2px 2px 92px 62px rgba(79, 25, 25, 0.6);
+    transition: 0.2s;
+}
+
+.gallery1:hover .gallery1-info {
+    color: #fff;
+    opacity: 1;
+    
+}
+
+.gallery1:nth-child(1) {
+    background-image: url(./images/live-from-chicago.png);
+}
+
+.gallery1:nth-child(2) {
+    background-image: url(./images/office.png);
+}
+
+.gallery1:nth-child(3) {
+    background-image: url(./images/armani-desk.png);
+}
+
+.gallery1:nth-child(4) {
+    background-image: url(./images/tristan-green-screen.png);
+}
+
+.footer {
+    margin-top: 4rem;
+}
+
+.find-out {
+    background: linear-gradient(90deg, rgba(106,187,229,1) 0%, rgba(157,155,238,1) 43%, rgba(232,134,206,1) 100%);
+    padding: 1.5rem 2rem;
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    color: #fff;
+    margin: 0 auto;
+}
+
+.find-out-text {
+    margin-bottom: 1rem;
+}
+
+.find-out-link {
+    color: #fff;
+}
+
+.find-out-btn {
+    font-family: 'clash_display_semi';
+    border: 1px solid #fff;
+    border-radius: 5px;
+    padding: .85rem 1rem;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.fa-twitter {
+    color: #1D9BF0;
+}
+
+.powered {
+    font-family: 'clash_display_semi';
+    font-size: .85rem;
+    margin-top: 5rem;
+    letter-spacing: 1rem;
+    color: var(--red);
+    text-align: center;
+}
+
+.footer-logos {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    margin: 1rem auto;
+    gap: 2rem;
+}
+
+.flogo {
+    max-height: 30px;
+}
+
+.built-follow-container {
+    border-top: 1px solid var(--red);
+    margin: 4rem auto 2rem;
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.built-by {
+    margin-left: 10%;
+}
+
+.winniffy {
+    color: var(--red);
+}
+
+.follow {
+    margin-right: 10%;
+    width: fit-content;
+}
+
+.follow-text {
+    font-size: .75rem;
+    margin-bottom: .5rem;
+}
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.25rem;
+}
+
+.social-bottom {
+    color: var(--soft-red);
+    font-size: 1.25rem;
+    transition: 200ms;
+}
+
+.social-bottom:hover {
+    color: var(--red);
+}
