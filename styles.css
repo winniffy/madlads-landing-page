@@ -378,7 +378,7 @@ p, h1, h2, div, article, a, li {padding: 0; margin: 0; text-decoration: none; li
 
 
 /* mobile responsiveness */
-@media (max-width: 375px) {
+@media (max-width: 768px) {
     .container {
         padding: 1em 0;
         margin: 0 auto;
